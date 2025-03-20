@@ -6,8 +6,10 @@ const Home = () => {
   const [tutorials, setTutorials] = useState([]);
 
   //   const url = "https://tutorial-api.fullstack.clarusway.com/tutorials/"; //* bu link canli'da,ulasilabilir.
-  const url = "http://127.0.0.1:8000/todo/"; //* bu link canli'da degil, herkes tarafindan ulasilabilir olmasi icin deploy edilmesi lazim. Benim DB'im, server klasörünün icinde db.sqlite3'de.
+  // const url = "http://127.0.0.1:8000/todo/"; //* bu link canli'da degil, herkes tarafindan ulasilabilir olmasi icin deploy edilmesi lazim. Benim DB'im, server klasörünün icinde db.sqlite3'de.
   //* Sadece bu url eklenerek Backend ile Frontend arasinda baglanti kuruldu.
+
+  const url = "https://fs-todoapp-server10.onrender.com/todo" //* deploy edildikten sonra bize render sitesinden verilen link buraya yapistirilir.
 
   //! GET (READ)
   const getBilgiler = async () => {
